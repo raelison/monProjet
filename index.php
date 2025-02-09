@@ -160,7 +160,7 @@ if (isset($_POST['update'])) {
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
     ?>
-    <h2>Edit User</h2>
+    <h2>Editer User</h2>
     <form method="POST" action="index.php">
         <input type="hidden" name="old_id" value="<?php echo $user['id']; ?>">
         <input type="text" name="id" value="<?php echo $user['id']; ?>" placeholder="ID" maxlength="10" required>
